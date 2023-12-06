@@ -1,0 +1,23 @@
+# Rime custom settings
+# encoding: utf-8
+patch:
+
+  switches:
+  # - name: ascii_mode
+  #   reset: 0
+  #   states: [ 中文, 英文 ]
+  - name: zh_trad
+    reset: 0    # 初始状态为 0: 简 -> 简 1: 简 -> 繁
+    states: [ 简体, 繁体 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: extended_charset
+    states: [ 常用, 扩展 ]
+  - name: ascii_punct
+    reset: 1
+    states: [ 。，, ．， ]
+
+  speller:
+    max_code_length: 0                    # 4码不自动上屏
+    auto_select: false                     # 即使4码唯一时，也不自动上屏
+    # auto_clear: max_length                # 空码时自动清空
