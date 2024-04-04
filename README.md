@@ -42,7 +42,7 @@ Rime 输入法具有高度可定制化的特性，通过读取不同的配置文
 
 ### 1. macOS
 
-<img width="330" alt="skin-macos" src="https://user-images.githubusercontent.com/12215982/149726120-1a066937-551c-4a43-b2e8-b081f6366c9d.png">
+<img width="525" alt="Screenshot 2024-03-17 at 07 59 12" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/7bb140ba-7d9f-44ca-a3b1-875aa008dbb1">
 
 ### 2. Windows
 皮肤可以通过修改 `weasel.custom.yaml` 文件内的 color_scheme 实现修改，对应正文的颜色方案
@@ -56,7 +56,7 @@ patch:
 <img width="500" alt="skin-windows" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/d3ab63d8-6d93-47f5-a599-5f4d9334dfab"/>
 
 ### 3. Ubuntu
-<img width="250" alt="skin-ubuntu" src="https://user-images.githubusercontent.com/12215982/131607073-0b3dfe0e-bfc8-4be0-91c7-b304702acdda.png">
+<img width="200" alt="skin-ubuntu" src="https://user-images.githubusercontent.com/12215982/131607073-0b3dfe0e-bfc8-4be0-91c7-b304702acdda.png">
 
 
 ## 三、文件说明
@@ -196,13 +196,14 @@ iOS 添加词时需要用到 `快捷指令`，我已做了分享，直接点击�
 不再动原来的主词库，除非发现一些很没有必要的词才会进行删除操作，不会进行添加操作。  
 以后新增的词都都放置在了 `wubi86_jidian_extra` 这个扩展词库中，可以通过工具来实现实时更新线上最新的词库内容。
 
-这个词库是我维护的，你也可以将一些常用的词上传到线上。
-
+这个词库是我维护的，你也可以将一些常用的词上传到线上。  
 我的想法是维护一个咱们五笔用户自己的词库，最终实现非常舒服的码字的目标。
 
-需要注册码的 email 我获取即可： kylebing@163.com，来信请注明来意。
+需要注册码的 email 我获取即可： kylebing@163.com，来信请注明来意。  
+> 线上管理地址在:  [http://kylebing.cn/manager/#/wubi-words](http://kylebing.cn/manager/#/wubi-words)
 
-![工具上传词条](https://user-images.githubusercontent.com/12215982/216496512-8f54658a-71cd-4de2-8e16-dbb86baf6df4.png)
+![工具上传词条](https://user-images.githubusercontent.com/12215982/216496512-8f54658a-71cd-4de2-8e16-dbb86baf6df4.png) 
+
 
 > ![2022-12-29 09 09 39](https://user-images.githubusercontent.com/12215982/209891815-057ce25b-cad5-4994-9495-9f2a0768733d.png)
 
