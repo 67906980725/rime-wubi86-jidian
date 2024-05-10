@@ -4,8 +4,10 @@ proj_path="$(dirname "$0")"
 proj_path="$(realpath -e "$proj_path")"
 install_by_path() {
   mkdir -p "$(dirname "$1")"
-  ln -s "$proj_path" "$1"
-  echo "已创建软链接: $1 -> $proj_path"
+  #ln -s "$proj_path" "$1"
+  #echo "已创建软链接: $1 -> $proj_path"
+  cp -frT "$proj_path" "$1"
+  echo "已复制: $proj_path 到 $1"
 }
 install_for_ibus() {
   install_by_path "$HOME/.config/ibus/rime"
