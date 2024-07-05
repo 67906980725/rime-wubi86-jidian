@@ -8,13 +8,13 @@
 
 `Rime` 是个输入法内核，在它的基础之上，又出现了涵盖 **Windows**、**macOS**、**Linux**、**iOS**、**Android** 五个常用操作系统的输入法，对应如下：
 
-|  操作系统   | 对应的输入法 | github                                                                     |    收费状态     |
-|:-------:|:------:|----------------------------------------------------------------------------|:-----------:|
-| Windows |  小狼毫   | [https://github.com/rime/weasel](https://github.com/rime/weasel)           |     免费      |
-|  macOS  |  鼠须管   | [https://github.com/rime/squirrel](https://github.com/rime/squirrel)       |     免费      |
-| Ubuntu  |  中州韵   | [https://github.com/rime/ibus-rime](https://github.com/rime/ibus-rime)     |     免费      |
-|   iOS   |  仓输入法  | [https://github.com/imfuxiao/Hamster](https://github.com/imfuxiao/Hamster) | 免费(高级功能收费)  |
-| Android | 同文输入法  | [https://github.com/osfans/trime](https://github.com/osfans/trime)         |     免费      |
+|  操作系统   | 对应的输入法 | github                                                                     |    收费状态    | 版本要求     |
+|:-------:|:------:|----------------------------------------------------------------------------|:----------:|----------|
+| Windows |  小狼毫   | [https://github.com/rime/weasel](https://github.com/rime/weasel)           |     免费     |          |
+|  macOS  |  鼠须管   | [https://github.com/rime/squirrel](https://github.com/rime/squirrel)       |     免费     | v1.00 之后 |
+| Ubuntu  |  中州韵   | [https://github.com/rime/ibus-rime](https://github.com/rime/ibus-rime)     |     免费     |          |
+|   iOS   |  仓输入法  | [https://github.com/imfuxiao/Hamster](https://github.com/imfuxiao/Hamster) | 免费(高级功能收费) |          |
+| Android | 同文输入法  | [https://github.com/osfans/trime](https://github.com/osfans/trime)         |     免费     |          |
 
 所有由 `Rime` 内核开发过来的输入法都可以共用一套输入方案。  
 由于五个输入平台使用的码表是一样的，所以能够在多个平台间保持同一种输入习惯，这一点对五笔输入而言尤为重要，打到最后，其实记的都是词频。
@@ -42,7 +42,18 @@ Rime 输入法具有高度可定制化的特性，通过读取不同的配置文
 
 ### 1. macOS
 
-<img width="525" alt="Screenshot 2024-03-17 at 07 59 12" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/7bb140ba-7d9f-44ca-a3b1-875aa008dbb1">
+<img width="654" alt="Screenshot 2024-06-03 at 21 32 15" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/538161d7-653a-4fb8-b7a8-8a4073e913c7">
+<img width="678" alt="Screenshot 2024-06-03 at 21 31 55" src="https://github.com/KyleBing/rime-wubi86-jidian/assets/12215982/3c67ad09-a872-4783-9d7b-330bd4d92885">
+
+如果你不想使用暗黑主题，只想用同一种主题，可以编辑 `squirrel.custom.yaml` 文件中如下内容，将 `color_schema_dark` 的皮肤名改成上面一样的即可。
+
+```yaml
+patch:
+   style:
+      color_scheme: roseo_maple            # 白亮模式下启用的皮肤，名字对应下方对皮肤的字义名
+      color_scheme_dark: roseo_maple_dark  # 暗黑模式下启用的皮肤
+```
+
 
 ### 2. Windows
 皮肤可以通过修改 `weasel.custom.yaml` 文件内的 color_scheme 实现修改，对应正文的颜色方案
