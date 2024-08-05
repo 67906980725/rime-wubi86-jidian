@@ -51,7 +51,7 @@ patch:
         - {click: Shift_L}
         - {click: Keyboard_symbols, long_click: Keyboard_number}
         - {click: Mode_switch, long_click: Menu}
-        - {click: space, width: 30}
+        - {click: space, width: 35}
         - {click: "'", long_click: '"', swipe_up: '"'}
-        - {click: '/', width: 15, long_click: '?', swipe_up: '?'}
+        - {click: '/', long_click: '?', swipe_up: '?'}
         - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
