@@ -1,0 +1,57 @@
+patch:
+  preset_keyboards:
+    default:
+      name: 預設40鍵
+      author: "osfans <waxaca@163.com>"
+      ascii_mode: 0
+      width: 10
+      height: 44
+      lock: true #切換程序時記憶鍵盤
+      keys:
+        - {click: '1', long_click: '!', swipe_up: '!'}
+        - {click: '2', long_click: '@', swipe_up: '@'}
+        - {click: '3', long_click: '#', swipe_up: '#'}
+        - {click: '4', long_click: '$', swipe_up: '$'}
+        - {click: '5', long_click: '%', swipe_up: '%'}
+        - {click: '6', long_click: '^', swipe_up: '^'}
+        - {click: '7', long_click: '&', swipe_up: '&'}
+        - {click: '8', long_click: '*', swipe_up: '*'}
+        - {click: '9', long_click: '(', swipe_up: '('}
+        - {click: '0', long_click: ')', swipe_up: ')'}
+        - {click: 'q', long_click: '_', swipe_up: '_'}
+        - {click: 'w', long_click: '-', swipe_up: '-'}
+        - {click: 'e', long_click: '+', swipe_up: '+'}
+        - {click: 'r', long_click: '=', swipe_up: '='}
+        - {click: 't', long_click: '|', swipe_up: '|'}
+        - {click: 'y', long_click: '\', swipe_up: '\'}
+        - {click: 'u', long_click: '[', swipe_up: '['}
+        - {click: 'i', long_click: ']', swipe_up: ']'}
+        - {click: 'o', long_click: '{', swipe_up: '{'}
+        - {click: 'p', long_click: '}', swipe_up: '}'}
+        - {click: 'a', long_click: select_all, swipe_up: select_all}
+        - {click: 's', long_click: Home, swipe_up: Home}
+        - {click: 'd', long_click: End, swipe_up: End}
+        - {click: 'f', long_click: Page_Up, swipe_up: Page_Up}
+        - {click: 'g', long_click: Page_Down, swipe_up: Page_Down}
+        - {click: 'h', long_click: Left, swipe_up: Left}
+        - {click: 'j', long_click: Down, swipe_up: Down}
+        - {click: 'k', long_click: Up, swipe_up: Up}
+        - {click: 'l', long_click: Right, swipe_up: Right}
+        - {click: BackSpace}
+        - {click: 'z', long_click: '`', swipe_up: '`'}
+        - {click: 'x', long_click: cut, swipe_up: cut}
+        - {click: 'c', long_click: copy, swipe_up: copy}
+        - {click: 'v', long_click: paste, swipe_up: paste}
+        - {click: 'b', long_click: '~', swipe_up: '~'}
+        - {click: 'n', long_click: Insert, swipe_up: Insert}
+        - {click: 'm', long_click: Delete, swipe_up: Delete}
+        - {click: ',', long_click: '<', swipe_up: '<'}
+        - {click: '.', long_click: '>', swipe_up: '>'}
+        - {click: ';', long_click: ':', swipe_up: ':'}
+        - {click: Shift_L}
+        - {click: Keyboard_symbols, long_click: Keyboard_number}
+        - {click: Mode_switch, long_click: Menu}
+        - {click: space, width: 30}
+        - {click: "'", long_click: '"', swipe_up: '"'}
+        - {click: '/', width: 15, long_click: '?', swipe_up: '?'}
+        - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
