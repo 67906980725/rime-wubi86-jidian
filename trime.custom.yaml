@@ -18,6 +18,7 @@ patch:
         - {click: '8', long_click: '*', swipe_up: '*'}
         - {click: '9', long_click: '(', swipe_up: '('}
         - {click: '0', long_click: ')', swipe_up: ')'}
+        
         - {click: 'q', long_click: '_', swipe_up: '_'}
         - {click: 'w', long_click: '-', swipe_up: '-'}
         - {click: 'e', long_click: '+', swipe_up: '+'}
@@ -28,6 +29,7 @@ patch:
         - {click: 'i', long_click: ']', swipe_up: ']'}
         - {click: 'o', long_click: '{', swipe_up: '{'}
         - {click: 'p', long_click: '}', swipe_up: '}'}
+        
         - {click: 'a', long_click: select_all, swipe_up: select_all}
         - {click: 's', long_click: Home, swipe_up: Home}
         - {click: 'd', long_click: End, swipe_up: End}
@@ -38,17 +40,19 @@ patch:
         - {click: 'k', long_click: Up, swipe_up: Up}
         - {click: 'l', long_click: Right, swipe_up: Right}
         - {click: BackSpace}
+        
         - {click: Shift_L}
         - {click: 'z', long_click: '`', swipe_up: '`'}
         - {click: 'x', long_click: cut, swipe_up: cut}
         - {click: 'c', long_click: copy, swipe_up: copy}
-        - {click: 'v', long_click: paste, swipe_up: paste}
+        - {click: 'v', long_click: liquid_keyboard_clipboard, swipe_up: paste}
         - {click: 'b', long_click: '~', swipe_up: '~'}
         - {click: 'n', long_click: Insert, swipe_up: Insert}
         - {click: 'm', long_click: Delete, swipe_up: Delete}
         - {click: ';', long_click: ':', swipe_up: ':'}
         - {click: "'", long_click: '"', swipe_up: '"'}
-        - {click: liquid_keyboard_clipboard, long_click: Theme_settings}
+        
+        - {click: Keyboard_symbols, long_click: Theme_settings}
         - {click: ',', long_click: '<', swipe_up: '<'}
         - {click: Mode_switch, long_click: Menu}
         - {click: space, width: 35}
