@@ -48,7 +48,7 @@ patch:
         - {click: 'm', long_click: Delete, swipe_up: Delete}
         - {click: ';', long_click: ':', swipe_up: ':'}
         - {click: "'", long_click: '"', swipe_up: '"'}
-        - {click: Keyboard_symbols, long_click: Keyboard_number}
+        - {click: liquid_keyboard_clipboard, long_click: Theme_settings}
         - {click: ',', long_click: '<', swipe_up: '<'}
         - {click: Mode_switch, long_click: Menu}
         - {click: space, width: 35}
