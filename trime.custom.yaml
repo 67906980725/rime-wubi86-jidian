@@ -16,46 +16,49 @@ patch:
         - {click: '6', long_click: '^', swipe_up: '^'}
         - {click: '7', long_click: '&', swipe_up: '&'}
         - {click: '8', long_click: '*', swipe_up: '*'}
-        - {click: '9', long_click: '(', swipe_up: '('}
-        - {click: '0', long_click: ')', swipe_up: ')'}
+        - {click: '9', long_click: '(){Left}', swipe_up: '(){Left}'}
+        - {click: '0', long_click: Insert, swipe_up: Insert}
         
-        - {click: 'q', long_click: '_', swipe_up: '_'}
-        - {click: 'w', long_click: '-', swipe_up: '-'}
-        - {click: 'e', long_click: '+', swipe_up: '+'}
-        - {click: 'r', long_click: '=', swipe_up: '='}
-        - {click: 't', long_click: '|', swipe_up: '|'}
-        - {click: 'y', long_click: '\', swipe_up: '\'}
-        - {click: 'u', long_click: '[', swipe_up: '['}
-        - {click: 'i', long_click: ']', swipe_up: ']'}
-        - {click: 'o', long_click: '{', swipe_up: '{'}
-        - {click: 'p', long_click: '}', swipe_up: '}'}
+        - {click: q, long_click: '`', swipe_up: '`'}
+        - {click: w, long_click: '~', swipe_up: '~'}
+        - {click: e, long_click: '-', swipe_up: '-'}
+        - {click: r, long_click: '_', swipe_up: '_'}
+        - {click: t, long_click: '=', swipe_up: "="}
+        - {click: y, long_click: '+', swipe_up: '+'}
+        - {click: u, long_click: '\', swipe_up: '\'}
+        - {click: i, long_click: '|', swipe_up: '|'}
+        - {click: o, long_click: '[]{Left}', swipe_up: '[]{Left}'}
+        - {click: p, long_click: '{}{Left}', swipe_up: '{}{Left}'}
         
-        - {click: 'a', long_click: select_all, swipe_up: select_all}
-        - {click: 's', long_click: Home, swipe_up: Home}
-        - {click: 'd', long_click: End, swipe_up: End}
-        - {click: 'f', long_click: Page_Up, swipe_up: Page_Up}
-        - {click: 'g', long_click: Page_Down, swipe_up: Page_Down}
-        - {click: 'h', long_click: Left, swipe_up: Left}
-        - {click: 'j', long_click: Down, swipe_up: Down}
-        - {click: 'k', long_click: Up, swipe_up: Up}
-        - {click: 'l', long_click: Right, swipe_up: Right}
-        - {click: BackSpace}
+        # 空隙
+        - {width: 5}
+        - {click: a, long_click: select_all, swipe_up: select_all}
+        - {click: s}
+        - {click: d, long_click: Delete, swipe_up: Delete}
+        - {click: f, long_click: Page_Down, swipe_up: Page_Down}
+        - {click: g, long_click: Left, swipe_up: Up, swipe_down: Down, swipe_left: Left, swipe_right: Right}
+        - {click: h, long_click: ';', swipe_up: ';'}
+        - {click: j, long_click: ':', swipe_up: ':'}
+        - {click: k, long_click: "'", swipe_up: "'"}
+        - {click: l, long_click: '"', swipe_up: '"'}
+        # 空隙
+        - {width: 5}
+
+        - {click: Shift_L, composing: delimiter, width: 15}
+        - {click: z, long_click: Home, swipe_up: Home}
+        - {click: x, long_click: cut, swipe_up: cut}
+        - {click: c, long_click: copy, swipe_up: copy}
+        - {click: v, long_click: paste, swipe_up: paste_clip, swipe_down: liquid_keyboard_clipboard}
+        - {click: b, long_click: Page_Up, swipe_up: Page_Up}
+        - {click: n}
+        - {click: m, long_click: End, swipe_up: End}
+        - {click: BackSpace, width: 15}
+
         
-        - {click: Shift_L}
-        - {click: 'z', long_click: '`', swipe_up: '`'}
-        - {click: 'x', long_click: cut, swipe_up: cut}
-        - {click: 'c', long_click: copy, swipe_up: copy}
-        - {click: 'v', long_click: liquid_keyboard_clipboard, swipe_up: paste}
-        - {click: 'b', long_click: '~', swipe_up: '~'}
-        - {click: 'n', long_click: Insert, swipe_up: Insert}
-        - {click: 'm', long_click: Delete, swipe_up: Delete}
-        - {click: ';', long_click: ':', swipe_up: ':'}
-        - {click: "'", long_click: '"', swipe_up: '"'}
-        
-        - {click: Keyboard_symbols, long_click: Theme_settings, swipe_up: Color_switch}
-        - {click: ',', long_click: '<', swipe_up: '<'}
-        - {click: Mode_switch, long_click: Menu}
-        - {click: space, width: 35}
-        - {click: '.', long_click: '>', swipe_up: '>'}
-        - {click: '/', long_click: '?', swipe_up: '?'}
-        - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
+        - {click: liquid_keyboard_switch, long_click: Menu, width: 12.5}
+        - {click: Mode_switch, long_click: Theme_settings, swipe_down: Color_switch, swipe_up: Color_switch, width: 12.5, key_text_size: "18", key_back_color: bgn, key_text_color: tgn}
+        - {click: ',', label: ',', long_click: '<', swipe_up: '<', key_back_color: bh3, key_text_color: th3}
+        - {click: space, long_click: Mode_switch, swipe_left: "Left", swipe_right: "Right", swipe_up: Schema_switchcn, width: 30, key_back_color: bkg, key_text_color: tkg}
+        - {click: '.', label: '.', long_click: '>', swipe_up: '>', key_back_color: bh3, key_text_color: th3}
+        - {click: '/', long_click: '?', swipe_up: '?', key_text_size: "18", key_back_color: bh3, key_text_color: th3}
+        - {click: Return, composing: Return1, swipe_up: Escape, width: 15, key_back_color: benter, key_text_color: tenter}
