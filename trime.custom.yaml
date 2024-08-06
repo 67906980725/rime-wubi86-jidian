@@ -38,6 +38,7 @@ patch:
         - {click: 'k', long_click: Up, swipe_up: Up}
         - {click: 'l', long_click: Right, swipe_up: Right}
         - {click: BackSpace}
+        - {click: Shift_L}
         - {click: 'z', long_click: '`', swipe_up: '`'}
         - {click: 'x', long_click: cut, swipe_up: cut}
         - {click: 'c', long_click: copy, swipe_up: copy}
@@ -45,13 +46,12 @@ patch:
         - {click: 'b', long_click: '~', swipe_up: '~'}
         - {click: 'n', long_click: Insert, swipe_up: Insert}
         - {click: 'm', long_click: Delete, swipe_up: Delete}
-        - {click: ',', long_click: '<', swipe_up: '<'}
-        - {click: '.', long_click: '>', swipe_up: '>'}
         - {click: ';', long_click: ':', swipe_up: ':'}
-        - {click: Shift_L}
+        - {click: "'", long_click: '"', swipe_up: '"'}
         - {click: Keyboard_symbols, long_click: Keyboard_number}
+        - {click: ',', long_click: '<', swipe_up: '<'}
         - {click: Mode_switch, long_click: Menu}
         - {click: space, width: 35}
-        - {click: "'", long_click: '"', swipe_up: '"'}
+        - {click: '.', long_click: '>', swipe_up: '>'}
         - {click: '/', long_click: '?', swipe_up: '?'}
         - {click: Return, composing: Return1, long_click: CommitComment, width: 15}
