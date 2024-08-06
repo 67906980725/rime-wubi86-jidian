@@ -52,7 +52,7 @@ patch:
         - {click: ';', long_click: ':', swipe_up: ':'}
         - {click: "'", long_click: '"', swipe_up: '"'}
         
-        - {click: Keyboard_symbols, long_click: Theme_settings}
+        - {click: Keyboard_symbols, long_click: Theme_settings, swipe_up: Color_switch}
         - {click: ',', long_click: '<', swipe_up: '<'}
         - {click: Mode_switch, long_click: Menu}
         - {click: space, width: 35}
